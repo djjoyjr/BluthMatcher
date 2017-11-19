@@ -27,18 +27,20 @@ module.exports = function (app){
     for (var i = 0; i < friends.length; i++) {
       hateLevel = 0;
       //This loop compares the numerical value of each individual survey answer with the answers of each existing Bluth
-      for (var j = 0; j < friends[i].answers[j]; j++) {
+      for (var j = 0; j < userAnswers.length; j++) {
         //This calculates the difference between each answer and sum them into totalDifference
         hateLevel += Math.abs(parseInt(userAnswers[j]) - parseInt(friends[i].answers[j]));
-        console.log("your hatred of" + friends[i].name + " is " + hateLevel);
-        }
-        //Find best friend match
-    if (hateLevel <= match.friendDifference) {
-      match.name = friends[i].name;
-      match.photo = friends[i].photo;
-      match.friendDifference = hateLevel;
-      }
-    }
+        console.log(friends[i].name);
+        console.log(hateLevel);
+        // console.log("your hatred of " + friends[i].name + " is " + hateLevel);
+      };
+      //Find best friend match
+      if (hateLevel <= match.friendDifference) {
+        match.name = friends[i].name;
+        match.photo = friends[i].photo;
+        match.friendDifference = hateLevel;
+      };
+    };
     //Pushing new friend to friends API
     friends.push(userData);
     res.json(match);

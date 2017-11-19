@@ -28,18 +28,19 @@ module.exports = function (app){
       hateLevel = 0;
       //This loop compares the numerical value of each individual survey answer with the answers of each existing Bluth
       for (var j = 0; j < friends[i].answers[j]; j++) {
-        //This caluculates the difference between each answer and sum them into totalDifference
+        //This calculates the difference between each answer and sum them into totalDifference
         hateLevel += Math.abs(parseInt(userAnswers[j]) - parseInt(friends[i].answers[j]));
-        //Find best friend match
-        if (hateLevel <= match.friendDifference) {
-          match.name = friends[i].name;
-          match.photo = friends[i].photo;
-          match.friendDifference = hateLevel;
+        console.log("your hatred of" + friends[i].name + " is " + hateLevel);
         }
+        //Find best friend match
+    if (hateLevel <= match.friendDifference) {
+      match.name = friends[i].name;
+      match.photo = friends[i].photo;
+      match.friendDifference = hateLevel;
       }
     }
     //Pushing new friend to friends API
-    friends.push(userData); 
+    friends.push(userData);
     res.json(match);
     });
 

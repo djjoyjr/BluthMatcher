@@ -8,23 +8,38 @@ var friends = [
 },
 {
   name: "Michael",
-  photo: "https://flavorwire.files.wordpress.com/2013/05/michael1.jpg",
+  photo: "https://brianlauritzen.files.wordpress.com/2013/05/michaelbluth.jpg",
   answers: ["5","4","1","5","1","5","1","1","1","1"]
 },
 {
   name: "Lindsay",
-  photo: "https://uproxx.files.wordpress.com/2015/06/lb-tie.jpg?quality=100&w=650",
+  photo: "https://i.pinimg.com/564x/bf/22/25/bf2225cf63379cea42da9b77917bcecc--music-tv-music-books.jpg",
   answers: ["3","3","5","3","4","5","3","3","3","5"]
 },
 {
   name: "Buster",
-  photo: "https://media.careerbliss.com/cms/buster.jpg",
+  photo: "http://www.issues.fi/wp-content/uploads/2013/05/Buster.jpg",
   answers: ["5","5","5","1","5","5","5","5","5","5"]
 },
 {
   name: "George Michael",
-  photo: "https://carboncostume.com/wordpress/wp-content/uploads/2013/03/georgemichaelbluth.jpg",
+  photo: "http://media.tumblr.com/tumblr_lxx12eI4UY1qazwkm.jpg",
   answers: ["4","4","2","4","4","4","4","5","2","2"]
+},
+{
+  name: "Tobias",
+  photo: "https://vignette.wikia.nocookie.net/arresteddevelopment/images/6/60/Season_4_Poster_-_Tobias_F%C3%BCnke_01.jpg/revision/latest/scale-to-width-down/300?cb=20130521213519",
+  answers: ["4","2","4","2","5","2","4","2","4","2"]
+},
+{
+  name: "Lucille",
+  photo: "https://i.ytimg.com/vi/-Zb1lZgN9OE/hqdefault.jpg",
+  answers: ["1","5","5","1","1","1","1","1","1","5"]
+},
+{
+  name: "George Sr.",
+  photo: "http://media.oregonlive.com/parade/photo/tamborjpg-dec740f11c368efc.jpg",
+  answers: ["4","5","3","2","5","2","3","2","5","1"]
 },
 {
   name: "Maeby",

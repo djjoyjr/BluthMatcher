@@ -32,5 +32,5 @@ var friends = [
   answers: ["1","1","1","1","1","1","1","1","1","1"]
 }
 ];
-//exports the friends array to be used by other files
+//This exports the friends array to be used by other files
 module.exports = friends;
